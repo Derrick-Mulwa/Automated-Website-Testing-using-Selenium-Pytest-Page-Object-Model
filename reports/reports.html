@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">reports.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">reports.html</h1>
+    <p>Report generated on 29-Jan-2025 at 09:40:39 by <a href="https://github.com/seleniumbase/SeleniumBase">SeleniumBase</a> and <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.0.2</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">26 tests ran in 1939.76 seconds.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to ge the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">3 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">23 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.11&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;allure-pytest&#34;: &#34;2.13.5&#34;, &#34;anyio&#34;: &#34;4.7.0&#34;, &#34;html&#34;: &#34;4.0.2&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;ordering&#34;: &#34;0.6&#34;, &#34;rerunfailures&#34;: &#34;15.0&#34;, &#34;xdist&#34;: &#34;3.6.1&#34;, &#34;seleniumbase&#34;: &#34;4.33.8&#34;, &#34;typeguard&#34;: &#34;4.4.1&#34;}}, &#34;tests&#34;: {&#34;test_cases/test_cases.py::TestCaseOne::test_case_one&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_one&#34;, &#34;duration&#34;: &#34;49.42&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_one&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;49.42&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_two&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_two&#34;, &#34;duration&#34;: &#34;16.46&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_two&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;16.46&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_three&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_three&#34;, &#34;duration&#34;: &#34;17.76&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_three&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;17.76&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_four&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_four&#34;, &#34;duration&#34;: &#34;47.12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_four&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;47.12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_five&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_five&#34;, &#34;duration&#34;: &#34;15.87&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_five&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;15.87&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_six&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_six&#34;, &#34;duration&#34;: &#34;23.96&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_six&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;23.96&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_seven&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_seven&#34;, &#34;duration&#34;: &#34;13.59&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_seven&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13.59&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_eight&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_eight&#34;, &#34;duration&#34;: &#34;14.26&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_eight&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;14.26&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_nine&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_nine&#34;, &#34;duration&#34;: &#34;13.90&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_nine&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13.90&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_ten&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_ten&#34;, &#34;duration&#34;: &#34;11.03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_ten&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;11.03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_eleven&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_eleven&#34;, &#34;duration&#34;: &#34;18.48&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_eleven&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;18.48&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_twelve&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_twelve&#34;, &#34;duration&#34;: &#34;106.55&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_twelve&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;106.55&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_13&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_13&#34;, &#34;duration&#34;: &#34;14.38&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;14.38&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_14&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_14&#34;, &#34;duration&#34;: &#34;233.22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;233.22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_15&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_15&#34;, &#34;duration&#34;: &#34;137.67&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;137.67&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_16&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_16&#34;, &#34;duration&#34;: &#34;137.68&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;137.68&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_17&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_17&#34;, &#34;duration&#34;: &#34;120.01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;120.01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;urllib3.connectionpool.HTTPConnectionPool object at 0x0000022F562E5B40&amp;gt;\nconn = &amp;lt;urllib3.connection.HTTPConnection object at 0x0000022F562E62F0&amp;gt;, method = &#39;POST&#39;\nurl = &#39;/session/fcde58ea70137e6c0a8732f635e33194/url&#39;, body = &#39;{\&#34;url\&#34;: \&#34;http://automationexercise.com\&#34;}&#39;\nheaders = HTTPHeaderDict({&#39;Accept&#39;: &#39;application/json&#39;, &#39;Content-Type&#39;: &#39;application/json;charset=UTF-8&#39;, &#39;User-Agent&#39;: &#39;selenium/4.27.1 (python windows)&#39;, &#39;Connection&#39;: &#39;keep-alive&#39;})\nretries = Retry(total=3, connect=None, read=None, redirect=None, status=None), timeout = Timeout(connect=120, read=120, total=None)\nchunked = False, response_conn = None, preload_content = True, decode_content = True, enforce_content_length = True\n\n    def _make_request(\n        self,\n        conn: BaseHTTPConnection,\n        method: str,\n        url: str,\n        body: _TYPE_BODY | None = None,\n        headers: typing.Mapping[str, str] | None = None,\n        retries: Retry | None = None,\n        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,\n        chunked: bool = False,\n        response_conn: BaseHTTPConnection | None = None,\n        preload_content: bool = True,\n        decode_content: bool = True,\n        enforce_content_length: bool = True,\n    ) -&amp;gt; BaseHTTPResponse:\n        \&#34;\&#34;\&#34;\n        Perform a request on a given urllib connection object taken from our\n        pool.\n    \n        :param conn:\n            a connection from one of our connection pools\n    \n        :param method:\n            HTTP request method (such as GET, POST, PUT, etc.)\n    \n        :param url:\n            The URL to perform the request on.\n    \n        :param body:\n            Data to send in the request body, either :class:`str`, :class:`bytes`,\n            an iterable of :class:`str`/:class:`bytes`, or a file-like object.\n    \n        :param headers:\n            Dictionary of custom headers to send, such as User-Agent,\n            If-None-Match, etc. If None, pool headers are used. If provided,\n            these headers completely replace any pool-specific headers.\n    \n        :param retries:\n            Configure the number of retries to allow before raising a\n            :class:`~urllib3.exceptions.MaxRetryError` exception.\n    \n            Pass ``None`` to retry until you receive a response. Pass a\n            :class:`~urllib3.util.retry.Retry` object for fine-grained control\n            over different types of retries.\n            Pass an integer number to retry connection errors that many times,\n            but no other types of errors. Pass zero to never retry.\n    \n            If ``False``, then retries are disabled and any exception is raised\n            immediately. Also, instead of raising a MaxRetryError on redirects,\n            the redirect response will be returned.\n    \n        :type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.\n    \n        :param timeout:\n            If specified, overrides the default timeout for this one\n            request. It may be a float (in seconds) or an instance of\n            :class:`urllib3.util.Timeout`.\n    \n        :param chunked:\n            If True, urllib3 will send the body using chunked transfer\n            encoding. Otherwise, urllib3 will send the body using the standard\n            content-length form. Defaults to False.\n    \n        :param response_conn:\n            Set this to ``None`` if you will handle releasing the connection or\n            set the connection to have the response release it.\n    \n        :param preload_content:\n          If True, the response&#39;s body will be preloaded during construction.\n    \n        :param decode_content:\n            If True, will attempt to decode the body based on the\n            &#39;content-encoding&#39; header.\n    \n        :param enforce_content_length:\n            Enforce content length checking. Body returned by server must match\n            value of Content-Length header, if present. Otherwise, raise error.\n        \&#34;\&#34;\&#34;\n        self.num_requests += 1\n    \n        timeout_obj = self._get_timeout(timeout)\n        timeout_obj.start_connect()\n        conn.timeout = Timeout.resolve_default_timeout(timeout_obj.connect_timeout)\n    \n        try:\n            # Trigger any extra validation we need to do.\n            try:\n                self._validate_conn(conn)\n            except (SocketTimeout, BaseSSLError) as e:\n                self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)\n                raise\n    \n        # _validate_conn() starts the connection to an HTTPS proxy\n        # so we need to wrap errors with &#39;ProxyError&#39; here too.\n        except (\n            OSError,\n            NewConnectionError,\n            TimeoutError,\n            BaseSSLError,\n            CertificateError,\n            SSLError,\n        ) as e:\n            new_e: Exception = e\n            if isinstance(e, (BaseSSLError, CertificateError)):\n                new_e = SSLError(e)\n            # If the connection didn&#39;t successfully connect to it&#39;s proxy\n            # then there\n            if isinstance(\n                new_e, (OSError, NewConnectionError, TimeoutError, SSLError)\n            ) and (conn and conn.proxy and not conn.has_connected_to_proxy):\n                new_e = _wrap_proxy_error(new_e, conn.proxy.scheme)\n            raise new_e\n    \n        # conn.request() calls http.client.*.request, not the method in\n        # urllib3.request. It also calls makefile (recv) on the socket.\n        try:\n            conn.request(\n                method,\n                url,\n                body=body,\n                headers=headers,\n                chunked=chunked,\n                preload_content=preload_content,\n                decode_content=decode_content,\n                enforce_content_length=enforce_content_length,\n            )\n    \n        # We are swallowing BrokenPipeError (errno.EPIPE) since the server is\n        # legitimately able to close the connection after sending a valid response.\n        # With this behaviour, the received response is still readable.\n        except BrokenPipeError:\n            pass\n        except OSError as e:\n            # MacOS/Linux\n            # EPROTOTYPE and ECONNRESET are needed on macOS\n            # https://erickt.github.io/blog/2014/11/19/adventures-in-debugging-a-potential-osx-kernel-bug/\n            # Condition changed later to emit ECONNRESET instead of only EPROTOTYPE.\n            if e.errno != errno.EPROTOTYPE and e.errno != errno.ECONNRESET:\n                raise\n    \n        # Reset the timeout for the recv() on the socket\n        read_timeout = timeout_obj.read_timeout\n    \n        if not conn.is_closed:\n            # In Python 3 socket.py will catch EAGAIN and return None when you\n            # try and read into the file pointer created by http.client, which\n            # instead raises a BadStatusLine exception. Instead of catching\n            # the exception and assuming all BadStatusLine exceptions are read\n            # timeouts, check for a zero timeout before making the request.\n            if read_timeout == 0:\n                raise ReadTimeoutError(\n                    self, url, f\&#34;Read timed out. (read timeout={read_timeout})\&#34;\n                )\n            conn.timeout = read_timeout\n    \n        # Receive the response from the server\n        try:\n&amp;gt;           response = conn.getresponse()\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py:536: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connection.py:507: in getresponse\n    httplib_response = super().getresponse()\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\client.py:1375: in getresponse\n    response.begin()\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\client.py:318: in begin\n    version, status, reason = self._read_status()\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\client.py:279: in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \&#34;iso-8859-1\&#34;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;socket.SocketIO object at 0x0000022F562E63E0&amp;gt;, b = &amp;lt;memory at 0x0000022F56526380&amp;gt;\n\n    def readinto(self, b):\n        \&#34;\&#34;\&#34;Read up to len(b) bytes into the writable buffer *b* and return\n        the number of bytes read.  If the socket is non-blocking and no bytes\n        are available, None is returned.\n    \n        If *b* is non-empty, a 0 return value indicates that the connection\n        was shutdown at the other end.\n        \&#34;\&#34;\&#34;\n        self._checkClosed()\n        self._checkReadable()\n        if self._timeout_occurred:\n            raise OSError(\&#34;cannot read from timed out object\&#34;)\n        while True:\n            try:\n&amp;gt;               return self._sock.recv_into(b)\nE               TimeoutError: timed out\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py:705: TimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nself = &amp;lt;test_cases.test_cases.TestCaseOne object at 0x0000022F532A6020&amp;gt;\nsetup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=\&#34;fcde58ea70137e6c0a8732f635e33194\&#34;)&amp;gt;\n\n    def test_case_17(self, setup):\n        self.driver = setup # 1\n    \n&amp;gt;       homepage = HomePage(self.driver).navigate_to(self.BASEURL) # 2\n\ntest_cases\\test_cases.py:597: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase_pages\\base_page.py:11: in navigate_to\n    self.driver.get(url)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:393: in get\n    self.execute(Command.GET, {\&#34;url\&#34;: url})\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:382: in execute\n    response = self.command_executor.execute(driver_command, params)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:404: in execute\n    return self._request(command_info[0], url, body=data)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:428: in _request\n    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_request_methods.py:143: in request\n    return self.request_encode_body(\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_request_methods.py:278: in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\poolmanager.py:443: in urlopen\n    response = conn.urlopen(method, u.request_uri, **kw)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py:843: in urlopen\n    retries = retries.increment(\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\retry.py:474: in increment\n    raise reraise(type(error), error, _stacktrace)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\util.py:39: in reraise\n    raise value\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py:789: in urlopen\n    response = self._make_request(\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py:538: in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;urllib3.connectionpool.HTTPConnectionPool object at 0x0000022F562E5B40&amp;gt;, err = TimeoutError(&#39;timed out&#39;)\nurl = &#39;/session/fcde58ea70137e6c0a8732f635e33194/url&#39;, timeout_value = 120\n\n    def _raise_timeout(\n        self,\n        err: BaseSSLError | OSError | SocketTimeout,\n        url: str,\n        timeout_value: _TYPE_TIMEOUT | None,\n    ) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Is the error actually a timeout? Will raise a ReadTimeout or pass\&#34;\&#34;\&#34;\n    \n        if isinstance(err, SocketTimeout):\n&amp;gt;           raise ReadTimeoutError(\n                self, url, f\&#34;Read timed out. (read timeout={timeout_value})\&#34;\n            ) from err\nE           urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host=&#39;localhost&#39;, port=57945): Read timed out. (read timeout=120)\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py:369: ReadTimeoutError\n\n------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_18&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_18&#34;, &#34;duration&#34;: &#34;32.43&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;32.43&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_19&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_19&#34;, &#34;duration&#34;: &#34;21.28&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_19&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;21.28&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_20&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_20&#34;, &#34;duration&#34;: &#34;247.58&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;247.58&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_cases.test_cases.TestCaseOne object at 0x0000022F532A5D80&amp;gt;\nsetup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=\&#34;a9503b0476c24c11bfa05af708d01d39\&#34;)&amp;gt;\n\n    def test_case_20(self, setup):\n        self.driver = setup # 1\n    \n        homepage = HomePage(self.driver).navigate_to(self.BASEURL) # 2\n    \n        homepage.click_products_button()#3\n    \n        all_products_page = AllProductsPage(self.driver)\n        assert all_products_page.all_products_text_is_visible()  # 4\n    \n        all_products_page.enter_search_text(self.search_text)#5\n        all_products_page.click_search_button()\n    \n        assert all_products_page.searched_products_text_is_visible()#6\n    \n        assert all_products_page.searched_products_list_is_visible()#7\n    \n&amp;gt;       all_products_page.add_all_searched_products_to_cart()#8\n\ntest_cases\\test_cases.py:671: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase_pages\\all_products_page.py:161: in add_all_searched_products_to_cart\n    self.hover_add_to_cart_and_continue_shopping(i+1)\nbase_pages\\all_products_page.py:125: in hover_add_to_cart_and_continue_shopping\n    self.click_continue_shopping_button_popup()\nbase_pages\\all_products_page.py:105: in click_continue_shopping_button_popup\n    continue_shopping_button = WebDriverWait(self.driver, self.TIMEOUT).until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;selenium.webdriver.support.wait.WebDriverWait (session=\&#34;a9503b0476c24c11bfa05af708d01d39\&#34;)&amp;gt;\nmethod = &amp;lt;function visibility_of_element_located.&amp;lt;locals&amp;gt;._predicate at 0x0000022F56782EF0&amp;gt;, message = &#39;&#39;\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \&#34;\&#34;) -&amp;gt; T:\n        \&#34;\&#34;\&#34;Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \&#34;\&#34;\&#34;\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \&#34;screen\&#34;, None)\n                stacktrace = getattr(exc, \&#34;stacktrace\&#34;, None)\n            if time.monotonic() &amp;gt; end_time:\n                break\n            time.sleep(self._poll)\n&amp;gt;       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:105: TimeoutException\n\n------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_21&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_21&#34;, &#34;duration&#34;: &#34;91.55&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_21&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;91.55&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_22&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_22&#34;, &#34;duration&#34;: &#34;17.60&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;17.60&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_23&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_23&#34;, &#34;duration&#34;: &#34;62.61&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_23&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;62.61&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_24&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_24&#34;, &#34;duration&#34;: &#34;128.26&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_24&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;128.26&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_cases.test_cases.TestCaseOne object at 0x0000022F532A6950&amp;gt;\nsetup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=\&#34;4b3bbdef039f789dffa207a3024469be\&#34;)&amp;gt;\n\n    def test_case_24(self, setup):\n        self.driver = setup # 1\n    \n        homepage = HomePage(self.driver).navigate_to(self.BASEURL) # 2\n    \n        assert homepage.homepage_is_visible(), &#39;HOMEPAGE NOT VISIBLE&#39;  # 3\n    \n        #4\n        homepage.hover_add_to_cart_and_continue_shopping(3)\n        homepage.hover_add_to_cart_and_continue_shopping(5)\n    \n        homepage.click_cart_button()#5\n    \n        cart_page = ViewCartPage(self.driver)\n        cart_page.cart_info_table_is_visible()#6\n    \n        cart_page.click_proceed_to_checkout_button()#7\n        cart_page.click_register_login_popup_btn()#8\n    \n        #9\n        login_page = LoginPage(self.driver)\n    \n        login_page.enter_signup_details(self.name, self.email)\n    \n        login_page.click_signup_button()\n    \n        signup = SignupPage(self.driver)\n    \n        assert signup.enter_account_information_is_visible(), &#39;ENTER ACCOUNT INFORMATION NOT VISIBLE&#39;\n    \n    \n        signup.select_title(self.gender)\n        signup.enter_name(self.name)\n        signup.enter_password(self.password)\n        signup.enter_date_of_birth(self.dob_day, self.dob_month, self.dob_year)\n    \n        signup.check_checkbox_sign_up_for_our_newsletter()\n        signup.check_checkbox_receive_special_offers()\n    \n    \n        signup.enter_first_name(self.first_name)\n        signup.enter_last_name(self.last_name)\n        signup.enter_company(self.company)\n        signup.enter_address(self.address)\n        signup.enter_address2(self.address_2)\n        signup.enter_country(self.country)\n        signup.enter_state(self.state)\n        signup.enter_city(self.city)\n        signup.enter_zipcode(self.zip_code)\n        signup.enter_mobile_number(self.mobile_number)\n    \n        signup.click_create_account_button()\n    \n        account_created_page = AccountCreatedPage(self.driver)\n    \n        #10\n        assert account_created_page.account_created_is_visible()\n        account_created_page.click_continue_button()\n    \n        homepage = HomePage(self.driver)\n        assert homepage.logged_in_as_username_is_visible() #11\n    \n        homepage.click_cart_button()#12\n    \n        view_cart_page = ViewCartPage(self.driver)\n        view_cart_page.click_proceed_to_checkout_button() #13\n    \n        checkout_page = CheckoutPage(self.driver)\n        address = [f&#39;{self.company}\\n{self.address}\\n{self.address_2}&#39;, self.country, self.mobile_number, f&#39;{self.city} {self.state} {self.zip_code}&#39;]\n    \n        assert checkout_page.verify_address(address)\n        assert checkout_page.review_your_order() #14\n    \n        checkout_page.enter_description_and_click_place_order(&#39;Nice_order&#39;)#15\n    \n        payment_page = PaymentsPage(self.driver)\n    \n&amp;gt;       payment_page.enter_payment_details_and_click_pay_button(self.name, self.card_number, self.card_cvc, self.card_expiry_month, self.card_expiration_year)#16 &amp; 17\n\ntest_cases\\test_cases.py:883: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase_pages\\payments_page.py:81: in enter_payment_details_and_click_pay_button\n    self.click_pay_and_confirm_order_button()\nbase_pages\\payments_page.py:31: in click_pay_and_confirm_order_button\n    pay_button.click()\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:94: in click\n    self._execute(Command.CLICK_ELEMENT)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:395: in _execute\n    return self._parent.execute(command, params)\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:384: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000022F56B07E20&amp;gt;\nresponse = {&#39;status&#39;: 400, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;element click intercepted\&#34;,\&#34;message\&#34;:\&#34;element click intercepted: Element ...07FF68601A1A9]\\\\n\\\\tBaseThreadInitThunk [0x00007FFD4659E8D7+23]\\\\n\\\\tRtlUserThreadStart [0x00007FFD47E7FBCC+44]\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &amp;lt;button class=\&#34;form-control btn btn-primary submit-button\&#34; data-qa=\&#34;pay-button\&#34; id=\&#34;submit\&#34; type=\&#34;submit\&#34;&amp;gt;...&amp;lt;/button&amp;gt; is not clickable at point (631, 516). Other element would receive the click: &amp;lt;iframe id=\&#34;aswift_2\&#34; name=\&#34;aswift_2\&#34; browsingtopics=\&#34;true\&#34; style=\&#34;width: 728px !important; height: 90px !important; display: block; margin: 0px auto;\&#34; sandbox=\&#34;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation\&#34; width=\&#34;728\&#34; height=\&#34;90\&#34; frameborder=\&#34;0\&#34; marginwidth=\&#34;0\&#34; marginheight=\&#34;0\&#34; vspace=\&#34;0\&#34; hspace=\&#34;0\&#34; allowtransparency=\&#34;true\&#34; scrolling=\&#34;no\&#34; allow=\&#34;attribution-reporting; run-ad-auction\&#34; src=\&#34;https://googleads.g.doubleclick.net/pagead/html/r20250127/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2\&#34; data-google-container-id=\&#34;a!3\&#34; tabindex=\&#34;0\&#34; title=\&#34;Advertisement\&#34; aria-label=\&#34;Advertisement\&#34; data-google-query-id=\&#34;CICj85qpmosDFUZwFQgdeC8ivQ\&#34; data-load-complete=\&#34;true\&#34;&amp;gt;&amp;lt;/iframe&amp;gt;\nE         (Session info: chrome=132.0.6834.112)\nE       Stacktrace:\nE       \tGetHandleVerifier [0x00007FF6860B6CC5+28821]\nE       \t(No symbol) [0x00007FF686023850]\nE       \t(No symbol) [0x00007FF685EC578A]\nE       \t(No symbol) [0x00007FF685F20E8E]\nE       \t(No symbol) [0x00007FF685F1E92C]\nE       \t(No symbol) [0x00007FF685F1BAF6]\nE       \t(No symbol) [0x00007FF685F1AA51]\nE       \t(No symbol) [0x00007FF685F0CBA0]\nE       \t(No symbol) [0x00007FF685F3F2FA]\nE       \t(No symbol) [0x00007FF685F0C3F6]\nE       \t(No symbol) [0x00007FF685F3F510]\nE       \t(No symbol) [0x00007FF685F5F412]\nE       \t(No symbol) [0x00007FF685F3F0A3]\nE       \t(No symbol) [0x00007FF685F0A778]\nE       \t(No symbol) [0x00007FF685F0B8E1]\nE       \tGetHandleVerifier [0x00007FF6863EFCCD+3408029]\nE       \tGetHandleVerifier [0x00007FF68640743F+3504143]\nE       \tGetHandleVerifier [0x00007FF6863FB61D+3455469]\nE       \tGetHandleVerifier [0x00007FF68617BDCB+835995]\nE       \t(No symbol) [0x00007FF68602EB6F]\nE       \t(No symbol) [0x00007FF68602A824]\nE       \t(No symbol) [0x00007FF68602A9BD]\nE       \t(No symbol) [0x00007FF68601A1A9]\nE       \tBaseThreadInitThunk [0x00007FFD4659E8D7+23]\nE       \tRtlUserThreadStart [0x00007FFD47E7FBCC+44]\n\n..\\..\\..\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:232: ElementClickInterceptedException\n\n------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_25&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_25&#34;, &#34;duration&#34;: &#34;13.64&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_25&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13.64&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}], &#34;test_cases/test_cases.py::TestCaseOne::test_case_26&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_cases/test_cases.py::TestCaseOne::test_case_26&#34;, &#34;duration&#34;: &#34;21.75&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_cases/test_cases.py::TestCaseOne::test_case_26&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;21.75&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nWARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (131.0.6778.108) detected in PATH at C:\\Users\\HomePC\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\seleniumbase\\drivers\\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;reports.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `${values.map((val) => `${val},&nbsp;&nbsp;`).join('')}` : `<span>${value}</span`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`).classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        //mediaName.innerText = media?.name
+        //counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) { container.classList.remove('media-container')
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
